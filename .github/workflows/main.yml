@@ -17,7 +17,7 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          npm install –legacy-peer-deps
+          npm install --legacy-peer-deps
           npm run build
           
           sudo cp -r ./build/* /var/www/html
